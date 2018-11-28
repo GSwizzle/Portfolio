@@ -1,164 +1,182 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-   <!--
+<!--
 Author: Grant Palmer
 Date: 11-10-18
 -->
-   <meta charset="utf-8">
-   <meta content="width=device-width, initial-scale=1" name="viewport">
-   <meta content="Grant Palmer" name="author">
-   <link href="bd_base.css" rel="stylesheet" type="text/css">
-   <link href="bd_layout1.css" rel="stylesheet" type="text/css">
-   <title>Bo's Dough / Locations</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Grant Palmer">
+	<link href="bd_base.css" rel="stylesheet" type="text/css" />
+	<link href="bd_layout1.css" rel="stylesheet" type="text/css" />
+	
+	<title>Bo's Dough / Locations</title>
+	
 </head>
+
 <body>
-   <header>
-      <a href="bd_index.html"><img alt="Bo's Dough" src="Logo.png"></a>
-      <nav>
-         <ul>
-            <li>
-               <a href="bd_index.html">Home</a>
-            </li>
-            <li>
-               <a href="bd_locations.html">Locations</a>
-            </li>
-            <li>
-               <a href="bd_menu.html">Menu</a>
-            </li>
-            <li>
-               <a href="bd_about.html">About</a>
-            </li>
-         </ul>
-      </nav>
-   </header>
-   <section>
-      <h1 class="semi-center">Locations</h1>
-      <article>
-         <style>
-         article img {
-         display: block;
-         float: left;
-         max-width: 150px;
-         margin-bottom: 20px;
-         margin-right: 5px;
-         }
-         </style>
-         <section>
-            <!--I styled this so that the three photos will be displayed next to one another with small amounts of space in between
+
+  <header>
+
+     <a href="bd_index.html"><img src="Logo.png" alt="Bo's Dough" /></a>
+	 
+	<nav>
+	  <ul>
+		<li><a href="bd_index.html">Home</a></li>
+		<li><a href="bd_locations.html">Locations</a></li>
+		<li><a href="bd_menu.html">Menu</a></li>
+		<li><a href="bd_about.html">About</a></li>
+	  </ul>
+	</nav>
+	
+  </header>
+
+  <section>
+  
+  <h1 class="semi-center">Locations</h1>
+  
+  <article>
+  
+  <style>article img {
+	display: block;
+	float: left;
+	max-width: 150px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+  }
+  </style>
+  <section>
+  <!--I styled this so that the three photos will be displayed next to one another with small amounts of space in between
   -->
-            <div class="semi-center"><img alt="Bremerton Location" src="bd_bremertonpic.png"> <img alt="Silverdale Location" src="bd_silverdalepic.png"> <img alt="Seattle Location" src="bd_seattlepic.png"></div>
-         </section>
-         <div>
-            <p>The table shows our current locations and their corresponding sheduled opening and closing times. If you would like to suggest a location for us to have established you can type the city or town you would like it in down in the Submission Box and we will review your suggestions</p>
-         </div>
-         <section id="table">
-            <!--My table is going to have maroon headers and linen data sets
+	<div class="semi-center">
+	  <img src="bd_bremertonpic.png" alt="Bremerton Location" />
+	  <img src="bd_silverdalepic.png" alt="Silverdale Location" />
+	  <img src="bd_seattlepic.png" alt="Seattle Location" />
+	</div>
+  </section>
+  <div>
+	<p>The table shows our current locations and their corresponding
+	sheduled opening and closing times. If you would like to suggest
+	a location for us to have established you can type the city or town
+	you would like it in down in the Submission Box and we will review
+	your suggestions</p>
+  </div>
+  <section id="table">
+  <!--My table is going to have maroon headers and linen data sets
   -->
-            <table class="locations">
-               <colgroup>
-                  <col class="dataColumn">
-                  <col class="locationsColumns">
-               </colgroup>
-               <thead>
-                  <tr>
-                     <th>Time</th>
-                     <th>Bremerton</th>
-                     <th>Silverdale</th>
-                     <th>Seattle</th>
-                     <th>Tacoma</th>
-                     <th>Everett</th>
-                     <th>Seabeck</th>
-                     <th>Belfair</th>
-                  </tr>
-               </thead>
-               <tfoot>
-                  <tr>
-                     <td colspan="8">Bo's Dough Establishments are Always Closed on Sundays</td>
-                  </tr>
-               </tfoot>
-               <tbody>
-                  <tr>
-                     <th>5:00 AM</th>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                  </tr>
-                  <tr>
-                     <th>6:00 AM</th>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                     <td rowspan="14">Open</td>
-                  </tr>
-                  <tr>
-                     <th>7:00 AM</th>
-                  </tr>
-                  <tr>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>8:00 AM</th>
-                  </tr>
-                  <tr>
-                     <th>9:00 AM</th>
-                  </tr>
-                  <tr>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>10:00 AM</th>
-                  </tr>
-                  <tr>
-                     <th>11:00 AM</th>
-                  </tr>
-                  <tr>
-                     <th>12:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>1:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>2:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>3:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>4:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>5:00 PM</th>
-                  </tr>
-                  <tr>
-                     <th>6:00 PM</th>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                     <td>Closed</td>
-                  </tr>
-               </tbody>
-            </table>
-         </section>
-         <form action="http://www.example.com" method="post">
-            <div>
-               <label for="suggestionBox">Suggest a New Location</label> <input id="suggestionBox" name="newLocation" placeholder="Type Location Here" type="text"> <input type="submit" value="Submit">
-            </div>
-         </form>
-      </article>
-      <footer>
-         Bo's Dough <i>Contact Us</i>: (123)-456-7890 bosdough@bosdough.com
-      </footer>
-   </section>
+    <table class="locations">
+           <colgroup>
+             <col class="dataColumn" />
+             <col class="locationsColumns" />
+           </colgroup>
+           
+           <thead>
+             <tr>
+               <th>Time</th>
+               <th>Bremerton</th>
+               <th>Silverdale</th>
+               <th>Seattle</th>
+               <th>Tacoma</th>
+               <th>Everett</th>
+               <th>Seabeck</th>
+               <th>Belfair</th>
+             </tr>
+               
+           </thead>
+           <tfoot>
+             <tr>
+               <td colspan="8">Bo's Dough Establishments are Always Closed on Sundays</td>
+             </tr>
+           </tfoot>
+           <tbody>
+             <tr>
+               <th>5:00 AM</th>
+               <td>Closed</td>
+               <td>Closed</td>
+               <td>Closed</td>
+               <td>Closed</td>
+			   <td>Closed</td>
+			   <td>Closed</td>
+			   <td>Closed</td>
+             </tr>
+             <tr>
+               <th>6:00 AM</th>
+               <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+			   <td rowspan="14">Open</td>
+             </tr>
+             <tr>
+               <th>7:00 AM</th>
+             </tr>
+             <tr>
+             <tr>
+               <th>8:00 AM</th>
+             </tr>
+             <tr>
+               <th>9:00 AM</th>
+             </tr>
+             <tr>
+             <tr>
+               <th>10:00 AM</th>
+             </tr>
+             <tr>
+               <th>11:00 AM</th>
+             </tr>
+             <tr>
+               <th>12:00 PM</th>
+             </tr>
+			 <tr>
+               <th>1:00 PM</th>
+             </tr>
+			 <tr>
+               <th>2:00 PM</th>
+             </tr>
+			 <tr>
+               <th>3:00 PM</th>
+             </tr>
+			 <tr>
+               <th>4:00 PM</th>
+             </tr>
+			 <tr>
+               <th>5:00 PM</th>
+             </tr>
+			 <tr>
+               <th>6:00 PM</th>
+               <td>Closed</td>
+               <td>Closed</td>
+               <td>Closed</td>
+			   <td>Closed</td>
+			   <td>Closed</td>
+			   <td>Closed</td>
+			   <td>Closed</td>
+             </tr>
+           </tbody>
+           
+           
+    </table>
+	</section>
+	
+  <form action="http://www.example.com" method="post">
+	<div>
+	  <label for="suggestionBox">Suggest a New Location</label>
+	  <input type="text" id="suggestionBox" name="newLocation" placeholder="Type Location Here">
+	  <input type="submit" value="Submit">
+	</div>
+  </form>
+  
+  </article>
+  
+  <footer>
+  Bo's Dough <i>Contact Us</i>: (123)-456-7890 bosdough@bosdough.com
+  </footer>
+  
+  </section>
+  
 </body>
-</html>

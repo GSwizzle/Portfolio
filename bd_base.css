@@ -38,6 +38,9 @@ article {
    height: 100%;
    width: 100%;
 }
+article div img {
+   border: 3px solid black;
+}
 .homeSummary {
    border: 2px solid black;
    padding: 14px;
